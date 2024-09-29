@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --exec babel-node src/index.js",
-    "build": "webpack --mode production --stats-error-details  babel src -d dist"
+    "dev": "nodemon src/index.js",
+    "build": "webpack --mode production --stats-error-details"
   },
   "author": "",
   "license": "ISC",
