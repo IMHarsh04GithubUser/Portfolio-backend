@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "build": "webpack --mode production --stats-error-details"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "buffer": "^6.0.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.6.3",
+    "nodemailer": "^6.9.15",
+    "nodemon": "^3.1.7",
+    "path-browserify": "^1.0.1",
+    "stream-browserify": "^3.0.0",
+    "url": "^0.11.4",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
