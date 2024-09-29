@@ -18,7 +18,9 @@ app.use(
 app.use(express.json());
 
 mongoose
-  .connect("mongodb+srv://harshmath2004:gVczlbjUR7yauQL0@mern-vercel.jcssb.mongodb.net/?retryWrites=true&w=majority&appName=mern-vercel")
+  .connect("mongodb+srv://harshmath2004:gVczlbjUR7yauQL0@mern-vercel.jcssb.mongodb.net/?retryWrites=true&w=majority&appName=mern-vercel",{
+     serverSelectionTimeoutMS: 100000
+  })
   .then(() => console.log("MongoDB Connected Successfully"))
   .catch((err) => console.error("Error in Connecting MongoDB:", err));
 
